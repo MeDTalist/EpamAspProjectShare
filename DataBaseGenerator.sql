@@ -12,6 +12,8 @@ go
 
 drop table Logins
 
+go
+
 CREATE TABLE Books
 (
 	ID_Record  int  NOT NULL ,
