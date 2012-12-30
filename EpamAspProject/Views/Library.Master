@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Library.master.cs" Inherits="EpamAspProject.Views.Library" %>
+
+<%@ Register src="UC/UCLogin.ascx" tagname="UCLogin" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Epam project</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" method="post" enctype="multipart/form-data">
+        <div align="right">
+            <uc2:UCLogin ID="UCLogin1" runat="server" />
+            </div>
+            <hr/>
+    <div>
+        <asp:ContentPlaceHolder ID="CPHView" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
